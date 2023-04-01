@@ -29,6 +29,22 @@ Ktistec powers [Epiktistes](https://epiktistes.com/), my low-volume
 home in the Fediverse. If you want to talk to me, I'm
 [@toddsundsted@epiktistes.com](https://epiktistes.com/@toddsundsted).
 
+## Usage
+
+### Docker Compose
+
+```
+version: '3.3'
+services:
+    ktistec:
+        volumes:
+            - '/docker/ktistec/db:/db'
+            - '/docker/ktistec/uploads:/uploads'
+        ports:
+            - '3232:3000'
+        image: itsnoted/ktistec
+```
+
 ## Features
 
 ### Text and images
