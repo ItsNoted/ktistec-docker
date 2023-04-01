@@ -41,7 +41,7 @@ services:
             - '/docker/ktistec/db:/db'
             - '/docker/ktistec/uploads:/uploads'
         ports:
-            - '3232:3000'
+            - '3333:3000'
         image: itsnoted/ktistec
 ```
 
